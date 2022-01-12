@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE>
 <html>
   <head>
     <meta charset="utf-8">
@@ -6,9 +6,65 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
+    <header>
+      <h1>Patrocinio a Escuelas Libres</h1>
+    </header>
+    <nav id="nav">
+        <a href='#' class="link1">Quienes somos</a>
+        <a href='#' class="link2">Escuelas libres</a>
+        <a href='#' class="link3">Patrocina</a>
+    </nav>
+    <br>
+    <main>
+      <article><h2>Patrocina</h2></article>
+      
+       <p>Aqui podrás ser un patrocinador/a activ@ de las escuelas libres y sus proyectos educacionales</p>
+        <div class="contenedor" >
+          <div class="inscripcion">
+            
+            <form class="inscribirse">
+              <article><h3>Inscripción</h3></article>
+              <label for="nombre">Nombre:</label>
+              <input type="text" name="nombre"><br>
+              <label for="EsculaP">Escuela a patrocinar:</label>
+              <input type="text" name="EscuelaP"><br>
+              <label for="Correo">Correo electrónico:</label>   
+              <input type="text" name="Correo"><br>
+              <br>
+              <Button class="botonins">Inscribirme</Button>
+            </form>
+            
+
+          </div>
+        
+          <div class="patrocinar">
+            <article><h3>Patrocinar</h3></article>
+            <form class="patrocinio">
+              <label for="number">Numeros de tarjeta:</label>
+              <input id ="numbercard" 
+              minlength= 16 
+              maxlength= 18 
+              type="text" 
+              name="number"
+              required
+              pattern="[0-9]+"><br>
+              <label for="Nombre2">Nombre:</label> 
+              <input type="text" name="Nombre2"><br>
+              <label for="Expira">Expira:</label>
+              <input type="text" name="Expira"><br>
+              <br>
+              <button type="button" id="patrocinio" class="botonpatro">Patrocinar</button>
+
+            </form>
+            
+          </div>
+        </div>  
+        <div class="imagen">
+          <img src="ronda.jpg" class="imagen">
+        </div>
+      </main>
+    <footer>
+    </footer>
     <script src="index.js" type="module"></script>
   </body>
 </html>
